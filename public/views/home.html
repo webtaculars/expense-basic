@@ -1,0 +1,19 @@
+
+
+			<div class="container" ng-controller="AddExpenseController as add">
+			    <div class="row">
+			       <div class="col-lg-8 col-lg-offset-2">
+			       		<h3>Add Expense</h3>
+			            <form class="form-signin" method="post" ng-submit="add.addExpense()">
+			                
+			                   Date:     <input type="text" class="form-control" id="date" ng-model="add.expenseData.date"></input>
+			                   Category: <input type="text" class="form-control" id="category" ng-model="add.expenseData.category"></input>
+			                   Type:     <input type="text" class="form-control" id="type" ng-model="add.expenseData.type"></input>
+			                   Amount:   <input type="text" class="form-control" id="amount" ng-model="add.expenseData.amount"></input>
+			                    <button class="btn btn-default" type='submit'>Submit</button>
+			                
+			            </form>
+			        </div>
+			    </div>
+			</div>
+			
